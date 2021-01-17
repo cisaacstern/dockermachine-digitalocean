@@ -12,6 +12,7 @@ https://stackoverflow.com/questions/48873652/docker-compose-which-syntax-produce
 3. Follow [these instructions](https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-18-04) for setting up a non-root
 user and adding a firewall.
 4. If this is a web server, follow [these instructions](https://www.digitalocean.com/community/tutorials/ufw-essentials-common-firewall-rules-and-commands) for allowing HTTP/HTTPS traffic through the firewall.
-5. Close the ssh shell.
-6. If building containers is the next step, run `eval "$(docker-machine env <machine-name>)"
+5. Run `ufw allow 2376/tcp` in the shell to allow connection with docker-machine.
+6. Close the ssh shell.
+7. If building containers is the next step, run `eval "$(docker-machine env <machine-name>)"
 

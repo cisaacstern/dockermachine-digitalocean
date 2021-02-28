@@ -1,5 +1,6 @@
-docker-machine create \                                                                                                                 
+docker-machine create \                                                                                                   
 --driver digitalocean \
+--digitalocean-image ubuntu-18-04-x64 \
 --digitalocean-access-token $TOKEN \
 --digitalocean-region sfo2 \
 --digitalocean-size s-1vcpu-1gb \
